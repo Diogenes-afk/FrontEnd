@@ -1,0 +1,243 @@
+/* Foto de Yuri Catalano em Unsplash sp
+    Foto de Lucas Campoi no Unsplash RJ
+    Foto de Marcus Alves no Unsplash SV
+    Foto da Linoleum Magazine em Unsplash
+    */
+
+    /* global style */ 
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 2.5em;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: normal;
+}
+li, button, p, input, label{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 4.8em;
+    font-family: 'Pattaya', sans-serif;
+
+}
+
+h3{
+    font-size:3em;
+    font-weight: normal;
+}
+
+h4,h5{
+    font-size: 2.8em;
+}
+a{
+    color: white;
+    text-decoration: white;
+}
+/* CSS SECTION E HERO */
+
+.main-head{
+    background: #131c27;
+    color: white;
+}
+
+nav{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 16vh;
+    align-items: center;
+    flex-wrap: wrap; /* Expansividade do site */
+}
+
+nav ul{ /* espaçamento dos itens dentro do nav */
+    display: flex;
+    align-items: center;
+    flex: 1 1 40rem;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#logo{
+    flex: 2 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+
+
+
+}
+
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), transparent), url("/images/lucas-campoi-pHnzdSAEkRM-unsplash.jpg");
+    alt: "Foto de Lucas Campoi no Unsplash RJ";
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.986);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    margin-top: 5px;
+    border-radius: 5px;
+    border-color:rgb(55, 55, 107);
+    padding: 10px 15px;
+    background: rgb(55, 55, 107);
+    color: white;
+    font: 1.8rem;
+    font-style: normal;
+    cursor: pointer; /* altera o cursor ao passar pelo botao */ 
+    transition: background 0.5s ease-in-out; /* Efeitos ao passar o mouse no botão */ 
+}
+button:hover{
+    background-color: rgb(31, 16, 100)
+}
+
+/* CSS localização */
+#localização{
+    min-height: 100vh;
+    background: linear-gradient(rgba(114, 93, 93, 0.5), transparent), url("/images/noronha.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.locali-head{
+    width: 90%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+}
+
+
+.Beneficios-head{
+background: rgb(46, 39, 39);
+min-height: 20rem;
+padding: 3rem;
+display: flex;
+align-items: center;
+text-align: center;
+flex-direction: column;
+color: rgb(241, 238, 238);
+justify-content: center;
+}
+
+.Beneficios-head h3{
+    padding: 1rem;
+
+}
+
+.boxs{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    flex:  1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(51, 51, 51, 0.5), 0px 10px 10px rgba(43, 42, 42, 0.5);
+
+}
+.card-icon{
+    background: rgba(71, 68, 68, 0.5);
+}
+.box h4{
+    margin: 1.5rem
+}
+
+.box p{
+    padding: 3rem;
+}
+
+img{
+    height: 100px;
+    align-items: center;
+}
+
+
+#form{  /* ajuste de plano de fundo e localizaçao de itens na pagina */
+    background: linear-gradient(rgba(12, 11, 11, 0.5),transparent), url("/images/camila-cordeiro-NOgn3fA94N4-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-wrapper{
+    background-color: rgba(19, 28, 39, 0.8);
+    width: 50%;
+    color: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+
+/* configu inputs */
+.forms-name, 
+.forms-email{
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+
+/*configuração botão 2 */
+.form-wrapper button{
+    justify-content: center;
+    width: 100%;
+    margin-top: 8rem;
+    padding: 2rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.form-wrapper input{
+    padding: 1rem 1rem;
+}
+    
+
+
+@media screen and (max-width: 932px){
+  nav{
+      text-align: center;
+  }
+  #logo{
+      padding: 2rem;
+  }
+}
+
+
